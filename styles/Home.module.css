@@ -1,5 +1,229 @@
-.title {
-  text-align: center;
-  color: brown;
-  font-size: 200px;
+@font-face {
+  font-family: "NetflixSans-Regular";
+  src: url("/fonts/NetflixSans-Regular.otf");
 }
+
+.sectionPresentation {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/background.jpg');
+  background-size: cover;
+  height: 75vh;
+  border-bottom: 10px solid #222;
+}
+
+.header {
+  padding-top: 15px;
+  padding-left: 100px;
+}
+
+.sectionPresentation .text{
+  color: white;
+  text-align: center;
+}
+
+.sectionPresentation .title {
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-size: 3.5em;
+  margin: 100px 30px 10px 30px;
+  display: block;
+}
+
+.title span{
+  display: block;
+}
+
+.sectionPresentation .subtitle {
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-weight: 100;
+}
+
+.sectionEnjoy {
+  border-bottom: 10px solid #222;
+}
+
+.sectionEnjoy .container{
+  padding: 20px;
+  margin: auto 19vw;
+  display: flex;
+}
+
+.sectionEnjoy .sectionEnjoyText{
+  margin: auto;
+}
+
+.sectionEnjoy .title{
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.sectionEnjoy .subtitle{
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-weight: 100;
+  font-size: 1.7em;
+  max-width: 600px;
+}
+
+.sectionContent {
+  border-bottom: 10px solid #222;
+}
+
+.sectionContent .container{
+  padding: 20px;
+  margin: auto 19vw;
+  display: flex;
+}
+
+.sectionContent .title{
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-size: 2.6em;
+  margin-bottom: 15px;
+}
+
+.sectionContent .sectionContentText{
+  width: 50%;
+  height: fit-content;
+  margin: auto;
+  margin-left: 70px;
+}
+
+.sectionContent .title{
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.sectionContent .subtitle{
+  font-family: 'NetflixSans-Regular', sans-serif;
+  font-weight: 100;
+  font-size: 1.7em;
+}
+
+.sectionFAQ {
+  font-family: 'NetflixSans-Regular', sans-serif;
+  border-bottom: 10px solid #222;
+  text-align: center;
+  padding: 3vw;
+}
+
+.sectionFAQ .title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.sectionFAQ ul{
+  list-style: none;
+  margin: 2em auto;
+  width: 75%;
+  padding: 0;
+  max-width: 815px;
+}
+
+.sectionFAQ li{
+  margin-bottom: 10px;
+  height: fit-content;
+}
+
+.sectionFAQ li button{
+  width: 100%;
+  height: 75px;
+  margin: auto;
+  background-color: #303030;
+  color: white;
+  font-weight: 100;
+  font-size: 1.7em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  padding: 0 2em;
+  text-align: left;
+}
+
+.sectionFAQ .closed {
+  display: none;
+}
+
+.sectionFAQ .open {
+  display: inherit;
+  padding: 1em;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+  font-size: 1.7em;
+  margin-top: 1px;
+  background-color: #303030;
+  overflow: hidden;
+  animation: unfolding .9s ease-out;
+}
+
+.sectionFAQ .project{
+  font-size: 1.3em;
+  max-width: 800px;
+  margin: auto;
+}
+
+.sectionFAQ .project button{
+  width: 300px;
+  height: 60px;
+  margin: 1em;
+  font-size: 1.2em;
+  background-color: #E50914;
+  border: none;
+  cursor: pointer;
+}
+
+.sectionFAQ .project button:hover{
+  background-color: #DB0510;
+}
+
+@keyframes unfolding {
+  from {
+    max-height: 0px;
+  }
+
+  to {
+    max-height: 500px;
+  }
+}
+
+.footer {
+  color: #737373;
+  margin: 30px 20vw;
+  padding: 0 5em;
+  font-family: 'NetflixSans-Regular', sans-serif;;
+  height: fit-content;
+  display: flex;
+}
+
+.footer .division {
+  width: 33%;
+}
+
+.footer .title {
+  font-size: 1.2em;
+}
+
+.footer .socialContainer {
+  text-align: center;
+  margin: 20px auto;
+  font-size: .9em;
+  width: 160px;
+}
+
+.footer .socialLogo {
+  width: 20px;
+  height: 20px;
+  margin: 0 65px;
+  text-align: center;
+}
+
+.footer .mail {
+  font-size: .9em;
+  margin-bottom: 20px;
+}
+
+.footer .nextjs {
+  margin-top: 10px;
+  font-size: .9em;
+}
+
