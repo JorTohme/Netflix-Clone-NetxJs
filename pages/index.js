@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import PageLayout from '../components/PageLayout'
+import Link from 'next/link'
 import { useState } from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { Snackbar } from '@mui/material'
@@ -22,12 +23,12 @@ export default function Home () {
       <section className={styles.sectionPresentation}>
         <header className={styles.header}>
           <Image src='/logo.svg' alt='Marflix' width={165} height={70} />
-          <nav />
         </header>
         <div className={styles.text}>
           <h1 className={styles.title}> Tus fragmentos favoritos <span>de Marvel</span> </h1>
           <h2 className={styles.subtitle}> Disfruta donde quieras. Cancela cuando quieras </h2>
         </div>
+        <Link href='/browse'> <div className={styles.browse}> ENTRAR </div> </Link>
       </section>
 
       <section className={styles.sectionEnjoy}>
